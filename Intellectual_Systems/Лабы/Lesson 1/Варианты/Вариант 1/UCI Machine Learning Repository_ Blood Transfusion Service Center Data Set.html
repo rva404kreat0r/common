@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>UCI Machine Learning Repository: Blood Transfusion Service Center Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table bgcolor="#003366" width="100%">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="http://archive.ics.uci.edu/ml/index.html" alt="Home"><img src="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu/"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td align="right" valign="top" width="100%">
+		<span class="whitetext">
+		<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="http://www.google.com/custom" onsubmit="return checkform(this);">
+		<input name="q" size="30" maxlength="255" type="text">
+		<input name="sa" value="Search" type="submit">
+		<input name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;" type="hidden">
+		<input name="domains" value="ics.uci.edu" type="hidden">
+		<br>
+		<input name="sitesearch" value="ics.uci.edu" checked="checked" type="radio"> <span class="whitetext"><font size="1">Repository</font></span>
+		<input name="sitesearch" value="" type="radio"> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.google.com/search"><img src="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/Logo_25blk.gif" alt="Google" align="middle" border="0" height="27"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="http://archive.ics.uci.edu/ml/datasets.html"><font color="#FFDD33" size="3"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table border="0" cellpadding="2" width="100%"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>Blood Transfusion Service Center Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/blood-transfusion/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/blood-transfusion/transfusion.names"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan -- this is a classification problem. </p>
+     </td>
+     <td><img src="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/Large176.jpg" hspace="20" vspace="10"> </td>
+   </tr></tbody></table>
+
+<table border="1" cellpadding="6">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">748</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Business</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">5</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2008-10-03</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">69900</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Original Owner and Donor
+<br>Prof. I-Cheng Yeh
+<br>Department of Information Management 
+<br>Chung-Hua University, 
+<br>Hsin Chu, Taiwan 30067, R.O.C.
+<br>e-mail:<u>icyeh <b>'@'</b> chu.edu.tw</u>
+<br>TEL:886-3-5186511
+<br>
+<br>Date Donated: October 3, 2008
+<br></p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">To demonstrate the RFMTC marketing model (a modified 
+version of RFM), this study adopted the donor database of Blood 
+Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes
+ their blood transfusion service bus to one university in Hsin-Chu City 
+to gather blood donated about every three months. To build a FRMTC 
+model, we selected 748 donors at random from the donor database. These 
+748 donor data, each one included R (Recency - months since last 
+donation), F (Frequency - total number of donation), M (Monetary - total
+ blood donated in c.c.), T (Time - months since first donation), and a 
+binary variable representing whether he/she donated blood in March 2007 
+(1 stand for donating blood; 0 stands for not donating blood). </p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">Given is the variable name, variable type, the 
+measurement unit and a brief description. The "Blood Transfusion Service
+ Center" is a classification problem. The order of this listing 
+corresponds to the order of numerals along the rows of the database. 
+<br>
+<br>R (Recency - months since last donation), 
+<br>F (Frequency - total number of donation), 
+<br>M (Monetary - total blood donated in c.c.), 
+<br>T (Time - months since first donation), and 
+<br>a binary variable representing whether he/she donated blood in March
+ 2007 (1 stand for donating blood; 0 stands for not donating blood). 
+<br>
+<br>
+<br>Table 1 shows the descriptive statistics of the data. We selected 
+500 data at random as the training set, and the rest 248 as the testing 
+set.
+<br>
+<br>Table 1. Descriptive statistics of the data
+<br>
+<br>Variable	Data Type	Measurement	Description	min	max	mean	std
+<br>Recency 	quantitative	Months	Input	0.03	74.4	9.74	8.07
+<br>Frequency 	quantitative	Times	Input	1	50	5.51	5.84
+<br>Monetary	quantitative	c.c. blood	Input	250	12500	1378.68	1459.83
+<br>Time 	quantitative	Months	Input	2.27	98.3	34.42	24.32
+<br>Whether he/she donated blood in March 2007	binary	1=yes 0=no	Output	0	1	1 (24%) 0 (76%)
+<br></p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, 
+"Knowledge discovery on RFM model using Bernoulli sequence," Expert 
+Systems with Applications, 2008,  <a href="doi:10.1016/j.eswa.2008.07.018">[Web Link]</a></p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">NOTE: Reuse of this database is unlimited with 
+retention of copyright notice for Prof. I-Cheng Yeh and the following 
+published paper:
+<br>
+<br>Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, "Knowledge 
+discovery on RFM model using Bernoulli sequence, "Expert Systems with 
+Applications, 2008,  
+<br><a href="doi:10.1016/j.eswa.2008.07.018">[Web Link]</a>
+<br></p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table align="center" cellpadding="5"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Blood%20Transfusion%20Service%20Center%20Data%20Set_files/rexaSmall.jpg"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu/">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>

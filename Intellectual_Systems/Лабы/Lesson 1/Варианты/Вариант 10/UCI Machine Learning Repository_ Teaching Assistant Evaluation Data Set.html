@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>UCI Machine Learning Repository: Teaching Assistant Evaluation Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="UCI%20Machine%20Learning%20Repository_%20Teaching%20Assistant%20Evaluation%20Data%20Set_files/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table bgcolor="#003366" width="100%">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="http://archive.ics.uci.edu/ml/index.html" alt="Home"><img src="UCI%20Machine%20Learning%20Repository_%20Teaching%20Assistant%20Evaluation%20Data%20Set_files/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu/"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td align="right" valign="top" width="100%">
+		<span class="whitetext">
+		<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="http://www.google.com/custom" onsubmit="return checkform(this);">
+		<input name="q" size="30" maxlength="255" type="text">
+		<input name="sa" value="Search" type="submit">
+		<input name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;" type="hidden">
+		<input name="domains" value="ics.uci.edu" type="hidden">
+		<br>
+		<input name="sitesearch" value="ics.uci.edu" checked="checked" type="radio"> <span class="whitetext"><font size="1">Repository</font></span>
+		<input name="sitesearch" value="" type="radio"> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.google.com/search"><img src="UCI%20Machine%20Learning%20Repository_%20Teaching%20Assistant%20Evaluation%20Data%20Set_files/Logo_25blk.gif" alt="Google" align="middle" border="0" height="27"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="http://archive.ics.uci.edu/ml/datasets.html"><font color="#FFDD33" size="3"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table border="0" cellpadding="2" width="100%"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>Teaching Assistant Evaluation Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/tae/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/tae/tae.names"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: The data consist of evaluations of teaching performance; scores are "low", "medium", or "high"</p>
+     </td>
+     <td> </td>
+   </tr></tbody></table>
+
+<table border="1" cellpadding="6">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">151</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">5</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1997-06-07</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">No</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">41287</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Collector: 
+<br>
+<br>Wei-Yin Loh (Department of Statistics, UW-Madison)
+<br>
+<br>Donor:
+<br>
+<br>Tjen-Sien Lim (<u>limt <b>'@'</b> stat.wisc.edu</u>)</p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The data consist of evaluations of teaching 
+performance over three regular semesters and two summer semesters of 151
+ teaching assistant (TA) assignments at the Statistics Department of the
+ University of Wisconsin-Madison. The scores were divided into 3 roughly
+ equal-sized categories ("low", "medium", and "high") to form the class 
+variable.</p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">   1. Whether of not the TA is a native English speaker (binary); 1=English speaker, 2=non-English speaker
+<br>   2. Course instructor (categorical, 25 categories)
+<br>   3. Course (categorical, 26 categories)
+<br>   4. Summer or regular semester (binary) 1=Summer, 2=Regular
+<br>   5. Class size (numerical)
+<br>   6. Class attribute (categorical) 1=Low, 2=Medium, 3=High</p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Loh, W.-Y. &amp; Shih, Y.-S. (1997). Split Selection Methods for  Classification Trees, Statistica Sinica 7: 815-840.
+<br><a href="http://rexa.info/paper/3c7ff36256dc54deeb225e87539c454c2ef1f188">[Web Link]</a>
+<br>
+<br>Lim, T.-S., Loh, W.-Y. &amp; Shih, Y.-S. (1999). A Comparison of 
+Prediction Accuracy, Complexity, and Training Time of Thirty-three Old 
+and New Classification Algorithms. Machine Learning. (<a href="ftp://ftp.stat.wisc.edu/pub/loh/treeprogs/quest1.7/mach1317.pdf">[Web Link]</a> or <a href="http://www.stat.wisc.edu/%7Elimt/mach1317.pdf">[Web Link]</a>)
+<br><a href="http://rexa.info/paper/db6d40facb609e2681727ef96e61dd49d42b4aff">[Web Link]</a></p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="http://archive.ics.uci.edu/ml/citation_policy.html">citation policy</a></p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table align="center" cellpadding="5"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Teaching%20Assistant%20Evaluation%20Data%20Set_files/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Teaching%20Assistant%20Evaluation%20Data%20Set_files/rexaSmall.jpg"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu/">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>

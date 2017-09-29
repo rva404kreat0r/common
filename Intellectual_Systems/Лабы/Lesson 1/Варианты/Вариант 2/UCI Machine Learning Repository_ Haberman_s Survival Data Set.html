@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>UCI Machine Learning Repository: Haberman's Survival Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table bgcolor="#003366" width="100%">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="http://archive.ics.uci.edu/ml/index.html" alt="Home"><img src="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu/"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td align="right" valign="top" width="100%">
+		<span class="whitetext">
+		<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="http://www.google.com/custom" onsubmit="return checkform(this);">
+		<input name="q" size="30" maxlength="255" type="text">
+		<input name="sa" value="Search" type="submit">
+		<input name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;" type="hidden">
+		<input name="domains" value="ics.uci.edu" type="hidden">
+		<br>
+		<input name="sitesearch" value="ics.uci.edu" checked="checked" type="radio"> <span class="whitetext"><font size="1">Repository</font></span>
+		<input name="sitesearch" value="" type="radio"> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.google.com/search"><img src="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/Logo_25blk.gif" alt="Google" align="middle" border="0" height="27"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="http://archive.ics.uci.edu/ml/datasets.html"><font color="#FFDD33" size="3"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table border="0" cellpadding="2" width="100%"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>Haberman's Survival Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/haberman/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/haberman/haberman.names"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Dataset contains cases from study conducted on the survival of patients who had undergone surgery for breast cancer</p>
+     </td>
+     <td> </td>
+   </tr></tbody></table>
+
+<table border="1" cellpadding="6">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">306</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Life</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">3</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1999-03-04</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">No</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">55172</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Donor:   
+<br>
+<br>Tjen-Sien Lim (<u>limt <b>'@'</b> stat.wisc.edu</u>)</p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The dataset contains cases from a study that was 
+conducted between 1958 and 1970 at the University of Chicago's Billings 
+Hospital on the survival of patients who had undergone surgery for 
+breast cancer.</p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">   1. Age of patient at time of operation (numerical)
+<br>   2. Patient's year of operation (year - 1900, numerical)
+<br>   3. Number of positive axillary nodes detected (numerical)
+<br>   4. Survival status (class attribute)
+<br>        -- 1 = the patient survived 5 years or longer
+<br>        -- 2 = the patient died within 5 year</p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Haberman, S. J. (1976). Generalized Residuals for 
+Log-Linear Models, Proceedings of the 9th International Biometrics 
+Conference, Boston, pp. 104-122.
+<br>
+<br>Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984), 
+Graphical Models for Assessing Logistic Regression Models (with 
+discussion), Journal of the American Statistical Association 79: 61-83.
+<br><a href="http://rexa.info/paper/883f49956b1f22c2c7a435c7f87704e30245ea55">[Web Link]</a>
+<br>
+<br>Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis, Department of Statistics, University of Wisconsin, Madison, WI.
+<br><a href="http://rexa.info/paper/4f2ee312e02a9897433db0f1631f74b5f7bf56e6">[Web Link]</a></p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Dennis DeCoste. <a 
+href="http://rexa.info/paper/03534af8424987a10b9e264147f082059665f7b7">Anytime Query-Tuned Kernel Machines via Cholesky Factorization</a>. SDM. 2003.  [<a 
+href="../support/Haberman's+Survival#03534af8424987a10b9e264147f082059665f7b7">View Context</a>].<br><br>Dennis DeCoste. <a 
+href="http://rexa.info/paper/ff68b57a8755189599b4cbefec533e7fc64a5195">Anytime Interval-Valued Outputs for Kernel Machines: Fast Support Vector Machine Classification via Distance Geometry</a>. ICML. 2002.  [<a 
+href="../support/Haberman's+Survival#ff68b57a8755189599b4cbefec533e7fc64a5195">View Context</a>].<br><br>Yin Zhang and W. Nick Street. <a 
+href="http://rexa.info/paper/8432b52f06e00a68cb8a7a49e3938190338231de">Bagging with Adaptive Costs</a>. Management Sciences Department University of Iowa Iowa City.  [<a 
+href="../support/Haberman's+Survival#8432b52f06e00a68cb8a7a49e3938190338231de">View Context</a>].<br><br>Denver Dash and Gregory F. Cooper. <a 
+href="http://rexa.info/paper/bc9fc18577f413262d1fc743ab3438d4b37d689e">Model Averaging with Discrete Bayesian Network Classifiers</a>. Decision Systems Laboratory Intelligent Systems Program University of Pittsburgh.  [<a 
+href="../support/Haberman's+Survival#bc9fc18577f413262d1fc743ab3438d4b37d689e">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/rexa.jpg"><p class="normal">Dennis DeCoste. <a href="http://rexa.info/paper/03534af8424987a10b9e264147f082059665f7b7">Anytime Query-Tuned Kernel Machines via Cholesky Factorization</a>. SDM. 2003.  [<a href="http://archive.ics.uci.edu/ml/support/Haberman%27s+Survival#03534af8424987a10b9e264147f082059665f7b7">View Context</a>].<br><br>Dennis DeCoste. <a href="http://rexa.info/paper/ff68b57a8755189599b4cbefec533e7fc64a5195">Anytime Interval-Valued Outputs for Kernel Machines: Fast Support Vector Machine Classification via Distance Geometry</a>. ICML. 2002.  [<a href="http://archive.ics.uci.edu/ml/support/Haberman%27s+Survival#ff68b57a8755189599b4cbefec533e7fc64a5195">View Context</a>].<br><br>Yin Zhang and W. Nick Street. <a href="http://rexa.info/paper/8432b52f06e00a68cb8a7a49e3938190338231de">Bagging with Adaptive Costs</a>. Management Sciences Department University of Iowa Iowa City.  [<a href="http://archive.ics.uci.edu/ml/support/Haberman%27s+Survival#8432b52f06e00a68cb8a7a49e3938190338231de">View Context</a>].<br><br>Denver Dash and Gregory F. Cooper. <a href="http://rexa.info/paper/bc9fc18577f413262d1fc743ab3438d4b37d689e">Model Averaging with Discrete Bayesian Network Classifiers</a>. Decision Systems Laboratory Intelligent Systems Program University of Pittsburgh.  [<a href="http://archive.ics.uci.edu/ml/support/Haberman%27s+Survival#bc9fc18577f413262d1fc743ab3438d4b37d689e">View Context</a>].<br><br></p>
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning 
+Repository's <a href="http://archive.ics.uci.edu/ml/citation_policy.html">citation policy</a></p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size="1">[1] Papers were automatically harvested and associated with this data set, in collaboration 
+with <a href="http://rexa.info/"><font size="1">Rexa.info</font></a></font></p>
+
+<table align="center" cellpadding="5"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20Haberman%27s%20Survival%20Data%20Set_files/rexaSmall.jpg"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu/">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>

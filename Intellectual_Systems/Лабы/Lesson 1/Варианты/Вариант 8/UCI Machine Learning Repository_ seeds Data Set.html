@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>UCI Machine Learning Repository: seeds Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="UCI%20Machine%20Learning%20Repository_%20seeds%20Data%20Set_files/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table bgcolor="#003366" width="100%">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="http://archive.ics.uci.edu/ml/index.html" alt="Home"><img src="UCI%20Machine%20Learning%20Repository_%20seeds%20Data%20Set_files/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu/"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td align="right" valign="top" width="100%">
+		<span class="whitetext">
+		<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="http://www.google.com/custom" onsubmit="return checkform(this);">
+		<input name="q" size="30" maxlength="255" type="text">
+		<input name="sa" value="Search" type="submit">
+		<input name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;" type="hidden">
+		<input name="domains" value="ics.uci.edu" type="hidden">
+		<br>
+		<input name="sitesearch" value="ics.uci.edu" checked="checked" type="radio"> <span class="whitetext"><font size="1">Repository</font></span>
+		<input name="sitesearch" value="" type="radio"> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.google.com/search"><img src="UCI%20Machine%20Learning%20Repository_%20seeds%20Data%20Set_files/Logo_25blk.gif" alt="Google" align="middle" border="0" height="27"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="http://archive.ics.uci.edu/ml/datasets.html"><font color="#FFDD33" size="3"><b>View 
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table border="0" cellpadding="2" width="100%"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>seeds Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/00236/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="#"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Measurements of geometrical 
+properties of kernels belonging to three different varieties of wheat. A
+ soft X-ray technique and GRAINS package were used to construct all 
+seven, real-valued attributes.</p>
+     </td>
+     <td> </td>
+   </tr></tbody></table>
+
+<table border="1" cellpadding="6">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">210</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Life</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">7</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2012-09-29</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification, Clustering</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">34149</p></td>
+	</tr>
+	<!--
+	<tr>
+		
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">MaÅ‚gorzata Charytanowicz, Jerzy Niewczas
+<br>Institute of Mathematics and Computer Science,
+<br>The John Paul II Catholic University of Lublin, KonstantynÃ³w 1 H,
+<br>PL 20-708 Lublin, Poland
+<br>e-mail: {mchmat,jniewczas}@kul.lublin.pl
+<br>
+<br>Piotr Kulczycki, Piotr A. Kowalski, Szymon Lukasik, Slawomir Zak
+<br>Department of Automatic Control and Information Technology,
+<br>Cracow University of Technology, Warszawska 24, PL 31-155 Cracow, Poland
+<br>and
+<br>Systems Research Institute, Polish Academy of Sciences, Newelska 6,
+<br>PL 01-447 Warsaw, Poland
+<br>e-mail: {kulczycki,pakowal,slukasik,slzak}@ibspan.waw.pl</p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The examined group comprised kernels belonging to 
+three different varieties of wheat: Kama, Rosa and Canadian, 70 elements
+ each, randomly selected for
+<br>the experiment. High quality visualization of the internal kernel 
+structure was detected using a soft X-ray technique. It is 
+non-destructive and considerably cheaper than other more sophisticated 
+imaging techniques like scanning microscopy or laser technology. The 
+images were recorded on 13x18 cm X-ray KODAK plates. Studies were 
+conducted using combine harvested wheat grain originating from 
+experimental fields, explored at the Institute of Agrophysics of the 
+Polish Academy of Sciences in Lublin.
+<br>
+<br>The data set can be used for the tasks of classification and cluster analysis.</p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">To construct the data, seven geometric parameters of wheat kernels were measured: 
+<br>1. area A, 
+<br>2. perimeter P, 
+<br>3. compactness C = 4*pi*A/P^2, 
+<br>4. length of kernel,
+<br>5. width of kernel,
+<br>6. asymmetry coefficient
+<br>7. length of kernel groove.
+<br>All of these parameters were real-valued continuous.</p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">M. Charytanowicz, J. Niewczas, P. Kulczycki, P.A. 
+Kowalski, S. Lukasik, S. Zak, 'A Complete Gradient Clustering Algorithm 
+for Features Analysis of X-ray Images', in: Information Technologies in 
+Biomedicine, Ewa Pietka, Jacek Kawa (eds.), Springer-Verlag, 
+Berlin-Heidelberg, 2010, pp. 15-24. </p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Contributors gratefully acknowledge support of their 
+work by the Institute of Agrophysics of the Polish Academy of Sciences 
+in Lublin.</p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table align="center" cellpadding="5"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20seeds%20Data%20Set_files/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository_%20seeds%20Data%20Set_files/rexaSmall.jpg"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="http://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://archive.ics.uci.edu/ml/contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu/">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>
